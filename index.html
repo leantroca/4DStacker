@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<title>4D Stacker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="fonts.css">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('background.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img src="src/STACKER_20180621/icon-stack.png" class="w3-center" alt="Icon" width="40" height="40"> 
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="https://doi.org/10.1002/qj.3436" class="w3-bar-item w3-button">Official page</a>
+    <a href="pdf/Lakkis_et_al-2019-Quarterly_Journal_of_the_Royal_Meteorological_Society-min.pdf" class="w3-bar-item w3-button">Publication</a>
+    <a href="src/" class="w3-bar-item w3-button">Source Code</a>
+    <a href="pdf/AAGG_ROCAMORA.pdf" class="w3-bar-item w3-button">Poster</a>
+  </div>
+  <a href="https://www.linkedin.com/in/leandro-rocamora/?locale=en_US" class="w3-bar-item w3-button w3-padding">Contact</a>
+  <a href="mailto:rocamora.leandro@gmail.com" class="w3-bar-item w3-button w3-padding">Mail</a>
+</nav>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top w3-center">A 4D feature‐tracking algorithm</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">
+      An objective four‐dimensional (4D) algorithm developed to track extratropical relative vorticity anomaly 3D structure over time is introduced and validated. The STACKER algorithm, structured with the TRACKER single‐level tracking algorithm as source of the single‐level raw tracks, objectively combines tracks from various levels to determine the 3D structure of the cyclone (or anticyclone) events throughout their life cycle. STACKER works progressively, beginning with two initial levels and then adding additional levels to the stack in a bottom‐up and/or top‐down approach. This allows an iterative stacking approach, adding one level at a time, resulting in an optimized 4D determination of relative vorticity anomaly events.
+    </p>
+    <p class="w3-large w3-center">
+      A two‐stage validation process is carried out with the ECMWF reanalysis ERA‐Interim dataset for the 2015 austral winter. First the overall tracking capability during an austral winter, taking into account a set of climate indicators and their impacts on Southern Hemisphere circulation, was compared to previous climatologies, in order to verify the density and distribution of the cyclone events detected by STACKER. Results show the cyclone density distribution is in very good agreement with previous climatologies, after taking into account potential differences due to climate variability and different tracking methodologies. The second stage focuses on three different long‐lived events over the Southern Hemisphere during the winter of 2015, spanning seven different pressure levels. Both GOES satellite imagery, infrared and water vapour channels, and ERA‐Interim cloud cover products are used in order to validate the tracks obtained as well as the algorithm's capability and reliability. The observed 3D cyclone structures and their time evolution are consistent with current understanding of cyclone system development. Thus, the two‐stage validation confirms that the algorithm is suitable to track multilevel events, and can follow and analyse their 3D life cycle and develop full 3D climatologies and climate variability studies.
+    </p>
+  </div>
+
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
+
+</body>
+</html>
+
